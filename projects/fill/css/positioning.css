@@ -1,0 +1,574 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-content: end;
+    align-items: end;
+    z-index:0;
+    height:100%;
+    width:100%;
+}
+
+#introScreen{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index:2099;
+}
+
+#introAlien{
+    position:absolute;
+    top:2rem;
+    right:2rem;
+}
+
+#scaleAlien{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    pointer-events: none;
+}
+
+#endScreenA{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index:2099;
+    display:none;
+    margin:auto;
+}
+
+#endScreenB{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:2099;
+    display:none;
+    margin:auto;
+}
+
+#bodyWrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    display: grid;
+    grid-template-columns: 25fr 45fr 30fr;
+    grid-template-rows: 2rem auto;
+    z-index:0;
+}
+
+/* Header */
+header{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+/* drop and backgrounds */
+#dropcontainer{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 130px 1fr;
+    justify-items: center;
+    z-index:1;
+}
+
+#alienContainer{
+    grid-column: 1 / 5;
+    grid-row: 1 / 3;
+    position:relative;
+    z-index:3;
+    width:100%;
+    height:400px;
+}
+
+#drop {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    z-index:4;
+    position:relative;
+}
+
+#dropbackgrounda {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    z-index:2;
+    position:relative;
+}
+
+#dropbackgroundb {
+    grid-column: 2 / 4;
+    grid-row: 1 / 32;
+    z-index:1;
+    position:relative;
+}
+
+#dropbackgroundc {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    z-index:0;
+    position:relative;
+}
+
+/* Dashboard */
+
+#dashboard{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    z-index:6;
+    height:auto;
+    margin-top:1rem;
+    position:relative;
+}
+
+/* mnt Eew progressbar */
+
+#progressbarlabelmtn{
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+#progressbarcontainermtn{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#progressbaroutsidemtn {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index:0;
+}
+
+#progressbarinsidemtn{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: end;
+    z-index:1;
+}
+
+/* Ocean level progressbar */
+
+#progressbarlabelocean{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+#progressbarcontainerocean{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position:relative;
+}
+
+#progressbaroutsideocean {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index:0;
+}
+
+#progressbarinsideocean{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: end;
+    z-index:1;
+}
+
+/* Progress bar levelindicators */
+#fivep {position:absolute; top:5%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#tenp {position:absolute; top:10%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#fifteenp {position:absolute; top:15%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#twentyp {position:absolute; top:20%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#twentyfivep {position:absolute; top:25%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#thirtyp {position:absolute; top:30%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#thirtyfivep {position:absolute; top:35%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#fourtyp {position:absolute; top:40%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#fourtyfivep {position:absolute; top:45%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#fiftyp {position:absolute; top:50%; right:0; height:3px; width:25px; background-color:#ffffff; z-index:2;}
+#fiftyfivep {position:absolute; top:55%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#sixtyp {position:absolute; top:60%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#sixtyfivep {position:absolute; top:65%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#seventyp {position:absolute; top:70%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#seventyfivep {position:absolute; top:75%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#eightyp {position:absolute; top:80%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#eightyfivep {position:absolute; top:85%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+#ninetyp {position:absolute; top:90%; right:5px; height:2px; width:20px; background-color:#ffffff; z-index:2;}
+#ninetyfivep {position:absolute; top:95%; right:15px; height:1px; width:10px; background-color:#ffffff; z-index:2;}
+
+/* Fill ocean button and text */
+
+#filloceandiv{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    z-index:1;
+    position:relative;
+}
+
+/* water container */
+
+#waterdiv{
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    z-index:0;
+    position:relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#watercontainer{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    display:none;
+}
+
+#watercontainerbefore{
+    background-image: linear-gradient(#46a1de, #183d55);
+    background-color:#46a1de;
+    min-height:200px; 
+    position:absolute;
+    overflow:hidden;            
+    left: 0px;
+    top:0px;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100%;    
+}
+
+.linewater{
+  background: #46a1de;
+  width: 12px;
+  height: 2px;
+  float: left;
+  animation: wave 1.5s infinite ease-in-out alternate;
+  z-index: 1;
+  position:absolute;
+}
+
+/* Store */
+
+#storecontainer{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    scrollbar-color: #221947 #065a98;
+    z-index:4;
+}
+
+#storecontainer::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #c5cae9;
+	border-radius: 10px;
+	
+}
+
+#storecontainer::-webkit-scrollbar
+{
+	width: 15px;
+	background-color:  #221947;
+}
+
+#storecontainer::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #065a98;
+}
+
+/* Stats */
+
+#statscontainer{
+    grid-column: 3/4;
+    grid-row: 2/4;
+    scrollbar-color: #221947 #065a98;
+    z-index:4;
+}
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #c5cae9;
+	border-radius: 10px;
+	
+}
+
+*::-webkit-scrollbar
+{
+	width: 15px;
+	background-color:  #221947;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #065a98;
+}
+
+/* Alert notifications that cover entire screen */
+
+#alertnotification{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100vh;
+    width:100vw;
+	background: rgba(0,0,0,0.5);
+	z-index:20000;
+    display:none;
+}
+
+#alertnotificationcontent {
+	color:#bbbbbb;
+	width:auto;
+	height:auto;
+	background-color:#221947;
+	margin:0 auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%, -50%); 
+	border-width:4px;	
+    border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	padding:10px;
+ }
+
+ /*
+	Screens that cover entire game
+*/
+
+
+/* Loading screen */ 
+
+#loading{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:2100;
+}
+
+/* knowhowscreen */
+#knowhowscreen {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+   
+}
+
+#starsdrag {
+    position:absolute;
+    top:-100%;
+    left:-100%;
+    width:300%;
+    height:300%;
+    z-index:40;
+    -webkit-transition: -webkit-transform .3s ease-out; 
+    -moz-transition: -moz-transform .3s ease-out; 
+    -o-transition: -o-transform .3s ease-out; 
+     transition: transform .3s ease-out; 
+}
+
+#superdrag {
+    position:absolute;
+    top:-100%;
+    left:-100%;
+    width:300%;
+    height:300%;
+    z-index:50;
+    -webkit-transition: -webkit-transform .3s ease-out; 
+    -moz-transition: -moz-transform .3s ease-out; 
+    -o-transition: -o-transform .3s ease-out; 
+     transition: transform .3s ease-out; 
+}
+
+#super1 {
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(200px, -250px);
+    background:transparent url("../images/super1.png") no-repeat center center;
+}
+
+#super2 {
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-400px, +200px);
+    background:transparent url("../images/super2.png") no-repeat center center;
+}
+
+#super3 {
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-100px, -150px);
+    background:transparent url("../images/super3.png") no-repeat center center;
+}
+
+#super4 {
+    width:120px;
+    height:120px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(200px, 250px);
+    background:transparent url("../images/super4.png") no-repeat center center;
+}
+
+#knowhowdrag{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    z-index:50;
+    -webkit-transition: -webkit-transform .3s ease-out; 
+    -moz-transition: -moz-transform .3s ease-out; 
+    -o-transition: -o-transform .3s ease-out; 
+     transition: transform .3s ease-out; 
+}
+
+#knowhowupgrades{
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    transform:scale(1);
+    width:200%;
+    height:200%;
+    -webkit-transition: -webkit-transform .3s ease-out; 
+   -moz-transition: -moz-transform .3s ease-out; 
+   -o-transition: -o-transform .3s ease-out; 
+    transition: transform .3s ease-out; 
+}
+
+#poseidonImage {
+    position:absolute;
+	bottom:10px;
+	right:30%;
+}
+
+#templeImage {
+    position:absolute;
+    bottom:90px;
+    right:30%;
+}
+
+#weatherstationImage{
+    position:absolute;
+	right:35%;
+    bottom:10px;
+}
+
+#verbod {
+    position:absolute;
+    right:35%;
+    bottom:10px;
+}
+
+#laserDiv{
+    position:absolute;
+    left:0;
+    height:0;
+    width:100%;
+    height:100%;
+    z-index:20000;
+    pointer-events: none;
+}
+
+#laserCanvas{
+    width:100%;
+    height:100%;
+    pointer-events: none;
+}
+
+#rainbow {
+    position:absolute;
+	bottom:25px;
+	left:27%;
+}
+
+#goldcoin {
+    position:absolute;
+	bottom:25px;
+	left:35%;
+}
+
+#levelUpHelpers {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:3000;
+	display:none;
+	background: rgba(0,0,0,0.5);
+}
+
+#levelUpHelpersContent {
+	color:#bbbbbb;
+	width:auto;
+	height:98%;
+	background-color:#221947;
+	margin:0 auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	padding:10px 10px 10px 10px;
+	overflow-y:auto;
+	text-align:center;
+}
+
+#levelUpHelpersBacktogameButton{
+    position:absolute;
+	top:5px;
+	right:5px;
+}

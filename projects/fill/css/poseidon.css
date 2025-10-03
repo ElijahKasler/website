@@ -1,0 +1,471 @@
+#poseidonStart{
+	display:none;
+	text-align:left;
+	background-color:#221947;
+	position:absolute;
+	bottom:90px;
+	left:50%;
+	transform:translateX(-55%);
+	max-width:40%;
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	color: #bbbbbb;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index:10000;
+}
+
+#poseidonStart p{
+	margin:0;
+	padding:0 0 0 1rem;
+}
+
+#poseidonEnd{
+	display:none;
+	text-align:left;
+	background-color:#221947;
+	position:absolute;
+	bottom:90px;
+	left:50%;
+	transform:translateX(-55%);
+	max-width:40%;
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	color: #bbbbbb;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index:10000;
+}
+
+#poseidonEnd p{
+	margin:0;
+	padding:0 0 0 1rem;
+}
+
+#poseidonSacrifice{
+	display:none;
+	text-align:left;
+	background-color:#221947;
+	position:absolute;
+	bottom:30px;
+	right:35%;
+	width:40%;
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	height:280px;
+	border-radius: 8px;
+	color: #bbbbbb;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index:10000;
+}
+
+
+
+#sacrificeDiv{
+	width:95%; 
+	height:auto; 
+	background-color:#002558; 
+	border-width:3px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	margin-right:10px;
+	-moz-box-shadow:    inset 0 0 20px #0090cf;
+	-webkit-box-shadow: inset 0 0 20px #0090cf;
+	box-shadow:         inset 0 0 20px #0090cf;
+	color:#ffffff;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:pointer;	
+}
+
+/*
+#sacrificeDiv:hover{
+	background-color:#01a2d7; 
+	-moz-box-shadow:    inset 0 0 20px #55ffff;
+	-webkit-box-shadow: inset 0 0 20px #55ffff;
+	box-shadow:         inset 0 0 20px #55ffff;
+}
+
+#sacrificeDiv:active{
+	background-color:#0072a7; 
+	-moz-box-shadow:    inset 0 0 20px #25cfcf;
+	-webkit-box-shadow: inset 0 0 20px #25cfcf;
+	box-shadow:         inset 0 0 20px #25cfcf;
+}
+*/
+.sacrificetext{
+	text-align:center;
+	margin-top:0.2em;
+	font-size:1.5em;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:pointer;	
+	margin:0;
+	padding:1rem 0;
+}
+
+.sacrificeexpl {
+	text-align:center;
+	font-size:0.8em;
+	margin-bottom:0.2em;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:pointer;	
+	margin:0;
+	padding:1rem 0;
+}
+
+#currentPrayerButton {
+	height:auto;
+	border-color:lightblue;
+	margin-top:0.5em;
+	border-radius: 10px;
+	background-color:#318ae8;
+	font-weight:bold;
+	font-size:1em;
+	color: #221947;
+	z-index:500;
+}
+
+#currentPrayerButton:hover{
+	background-color:#63a7f1;
+}
+
+#currentPrayerButton:focus{outline:0;}
+
+.sacrificeimage {
+	margin:1rem;
+}
+
+#prayerDiv{
+	width:60px;
+	height:60px;
+	background: #221947 url("../images/question.png") no-repeat center center;
+	border: 2px solid white;
+	border-radius:4px;
+	position:absolute;
+	top:-30px;
+	right:30px;
+	cursor:pointer;	
+}
+
+#prayerDiv:hover{
+	background-color:#423977;
+	border-color:lightblue;
+}
+
+#secondPrayerDiv{
+	width:60px;
+	height:60px;
+	background: #221947 url("../images/question.png") no-repeat center center;
+	border: 2px solid white;
+	border-radius:4px;
+	position:absolute;
+	top:-30px;
+	right:120px;
+	cursor:pointer;	
+	display:none;
+}
+
+#secondPrayerDiv:hover{
+	background-color:#423977;
+	border-color:lightblue;
+}
+
+#poseidonMinigame {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:3000;
+	display:none;
+	background: rgba(0,0,0,0.5);
+}
+
+#poseidonContent {
+	color:#bbbbbb;
+	width:98%;
+	height:98%;
+	background-color:#221947;
+	margin:0 auto;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	padding:10px 10px 10px 10px;
+	overflow-y:auto;
+	text-align:center;
+}
+
+#poseidonContent p{
+	margin:0;
+	padding:0;
+}
+
+#poseidonBacktogameButton{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+
+.poseidonMinigameResourceGroupDiv{
+	width:100%;
+	text-align:center;
+}
+
+.poseidonMinigameResourceDiv{
+	position:relative;
+	float:left;
+	border-width:2px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 4px;
+	padding:5px;
+	margin:3px;
+	text-align:left;
+	max-width:320px;
+	width:320px;
+}
+
+.pResourceTitle {
+	font-size:1.5em;
+	color:#ffffff;
+}
+
+.pBarnImage {
+	width:100px;
+	height:70px;
+	background:transparent url("../images/barn.png") no-repeat center center;
+	margin-right:5px;
+	cursor:pointer;	
+}
+
+#pFoodImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/food.png") no-repeat center center;
+	margin-left:5px;
+	cursor:pointer;	
+}
+
+#pWoodImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/wood.png") no-repeat center center;
+	margin-left:5px;
+	cursor:pointer;	
+}
+
+#pStoneImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/rock.png") no-repeat center center;
+	margin-left:5px;
+	cursor:pointer;	
+}
+
+#pTentImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/tent.png") no-repeat center center;
+	margin-left:5px;
+	cursor:pointer;	
+}
+
+#pWoodenhouseImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/woodenhouse.png") no-repeat center center;
+	margin-left:5px;
+	margin-bottom:2px;
+	cursor:pointer;	
+}
+
+#pStonehouseImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/stonehouse.png") no-repeat center center;
+	margin-left:5px;
+	cursor:pointer;	
+}
+
+#pWorkerImage{
+	width:70px;
+	height:70px;
+	background:transparent url("../images/worker.png") no-repeat center center;
+	margin-left:5px;
+	cursor:pointer;	
+}
+
+#pTempleImage{
+	width:140px;
+	height:90px;
+	background:transparent url("../images/temple.png") no-repeat center center;
+	cursor:pointer;	
+}
+
+#pCongratulationsDiv{
+	width:100%;
+	font-size:2em;
+	font-weight:bold;
+	display:none;
+}
+
+.textclickpos{
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	width:auto;
+	height:auto;
+	color: #ffffff;
+	z-index:1200;
+	font-weight:bold;
+	font-size:1em;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:pointer;	
+}
+
+#prayerSelectDiv{
+	display:none;
+	text-align:left;
+	background-color:#221947;
+	position:absolute;
+	width:auto;
+	height:auto;
+	width:40%;
+	max-width:70%;
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	color: #bbbbbb;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index:10000;
+	padding:1rem;	
+}
+
+#prayerSelectDivCloseButton{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+
+.prayer {
+	width:60px;
+	height:60px;
+	border-radius: 4px;
+	border: 2px solid white;
+	-moz-opacity: 1.0;
+	opacity:1.00;
+	filter: alpha(opacity=100);
+	cursor:pointer;	
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	background-color: #221947;
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	color:#bbbbbb;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+.prayerSelected {
+	box-shadow: 0px 0px 5px 5px #ffffff;
+	transform:scale(1.1);
+	transform-origin: center;
+}
+
+#weatherstationDiv {
+	display:none;
+	text-align:left;
+	background-color:#221947;
+	position:absolute;
+	bottom:30px;
+	right:35%;
+	width:40%;
+	border-width:4px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	height:280px;
+	border-radius: 8px;
+	color: #bbbbbb;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index:10000;
+}
+
+#weatherstationDiv p{
+	padding:0.2em 0.5em;
+	margin-left:0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+#upgradeWeatherstationDiv{
+	width:95%; 
+	height:auto; 
+	background-color:#002558; 
+	border-width:3px;	
+	border-style:ridge;
+	border-color:#b2a9d7;
+	border-radius: 8px;
+	margin-right:10px;
+	-moz-box-shadow:    inset 0 0 20px #0090cf;
+	-webkit-box-shadow: inset 0 0 20px #0090cf;
+	box-shadow:         inset 0 0 20px #0090cf;
+	color:#ffffff;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor:pointer;	
+}

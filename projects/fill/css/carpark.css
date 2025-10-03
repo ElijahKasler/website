@@ -1,0 +1,140 @@
+#carparkGame{
+    position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:3000;
+	display:none;
+	background-color:#221947;
+	overflow-x:hidden;
+	text-align:center;
+}
+
+#carparkGame h1{
+	color:#ffffff;
+	font-size:2rem;
+}
+
+#carparkGame p{
+	color:#ffffff;
+	margin:0;
+	padding:0;
+}
+
+#carparkBacktogameButton{
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+
+#wall {
+	margin:18px auto auto;
+	width:50vw;
+	height:35.7vw;
+	background-color: silver;
+	background-image:url('../images/wallBg.jpg');
+	border: 3px solid #000000;
+	border-radius:15px;
+	padding:30px 20px 20px 20px;
+	text-align:center;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#carparkContainer {
+	margin:auto;
+	position:relative;
+	width:98%;
+	height:98%;
+	background-color: #6666FF;
+	background-image:url('../images/stoneBg.jpg');
+	border: 3px solid #000000;
+	border-radius:5px;	
+}
+
+#Exit {
+	position:absolute;
+	width:10%;
+	height:30%;
+	background-image:url('../images/stoneBg.jpg');
+	top:50%; 
+	right:-10%; 
+	transform:translateY(-50%);
+	z-index:1;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+}
+
+#carparkTruck {
+	position:absolute;
+	width:42.86%;
+	height:20%;
+	background-image:url('../images/carparkTruck.png');
+	background-size:95% 95%;
+	background-repeat:no-repeat;
+	background-position:center;
+	cursor:move;
+	z-index:2;
+}
+
+#carparkTruck p{
+	color:white;
+	font-size:24px;
+	margin-top:35px;
+	margin-left:35px;
+	text-align:left;
+	text-shadow:0px 0px 3px 3px silver;
+	padding:0;
+}
+
+
+
+.carparkCar {
+	position:absolute;
+	color:white;
+	cursor:move;
+}
+
+.V {
+	width:14.28%;
+	height:40%;
+	background-image:url('../images/carV.png');
+	background-repeat:no-repeat;
+	background-size:100% 110%;
+	background-position:center;
+	z-index:10;
+	position:absolute;
+}
+
+
+.H {
+	width:28.57%;
+	height:20%;
+	background-image:url('../images/carH.png');
+	background-repeat:no-repeat;
+	background-size:110% 100%;
+	background-position:center;
+	z-index:10;
+	position:absolute;
+}
+
+#carparkGameCongratulations{
+	display:none;
+	z-index:1000;
+	background-color:rgba(0,0,0,0.5);
+	text-align:center;
+	width:auto;
+	margin:auto;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#carparkGameCongratulations p{
+	margin:0;
+	padding:0;
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "link": "/projects/Config/settings.html",
+    "imgSrc": "/projects/Config/settings.ico",
+    "title": "Settings"
+  },
+  {
+    "link": "/projects/Config/more-games.html",
+    "imgSrc": "/projects/Config/one-more.ico",
+    "title": "More Games"
+  }
+]
