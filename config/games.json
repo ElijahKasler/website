@@ -783,5 +783,10 @@
     "link": "projects/gons/index.html",
     "imgSrc": "projects/gons/favicon.ico",
     "title": "Gons.io"
+  },
+  {
+    "link": "projects/10-min-till-dawn/index.html",
+    "imgSrc": "projects/10-min-till-dawn/splash.png",
+    "title": "10 Min Till Dawn"
   }
 ]
