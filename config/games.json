@@ -775,6 +775,11 @@
     "title": "Block Blast"
   },
   {
+    "link": "projects/bison/index.html",
+    "imgSrc": "projects/bison/favicon.png",
+    "title": "Burrito Bison"
+  },
+  {
     "link": "projects/core-ball/index.html",
     "imgSrc": "projects/core-ball/favicon.ico",
     "title": "Core Ball"
