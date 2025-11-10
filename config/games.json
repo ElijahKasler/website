@@ -793,5 +793,10 @@
     "link": "projects/10-min-till-dawn/index.html",
     "imgSrc": "projects/10-min-till-dawn/splash.png",
     "title": "10 Min Till Dawn"
+  },
+  {
+    "link": "projects/8-Ball/index.html",
+    "imgSrc": "projects/8-Ball/favicon.png",
+    "title": "8 Ball Billiards Classic"
   }
 ]
