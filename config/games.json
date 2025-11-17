@@ -705,11 +705,6 @@
     "title": "Yohoho Io"
   },
   {
-    "link": "projects/minecraft/index.html",
-    "imgSrc": "projects/minecraft/1.8.8.png",
-    "title": "Eaglercraft 1.8.8"
-  },
-  {
     "link": "projects/only-up/index.html",
     "imgSrc": "projects/only-up/favicon.ico",
     "title": "Only Up"
@@ -798,5 +793,10 @@
     "link": "projects/8-Ball/index.html",
     "imgSrc": "projects/8-Ball/favicon.png",
     "title": "8 Ball Billiards Classic"
+  },
+  {
+    "link": "projects/minecraft/index.html",
+    "imgSrc": "projects/minecraft/favicon.png",
+    "title": "Minecraft"
   }
 ]
