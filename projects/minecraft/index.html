@@ -1,54 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Join Minecraft Server</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #121212;
-      color: #ffffff;
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-    h1 {
-      font-family: 'Lora', serif;
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: 10px auto;
-    }
-    button {
-      margin-top: 30px;
-      background-color: #22c55e;
-      border: none;
-      padding: 15px 32px;
-      font-size: 16px;
-      color: white;
-      border-radius: 20px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Version Selector</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .menu {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    transition: all 0.3s ease;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .note {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .multiplayer {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+
+  .multiplayer a {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  .multiplayer a:hover {
+    text-decoration: underline;
+  }
+
+  .settings-img {
+    margin-top: 5px;
+    max-width:300px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+</style>
 </head>
 <body>
-  <h1>How to Join Minecraft Server</h1>
-  <p>Go to Multiplayer</p>
-  <p>Click "Add Server"</p>
-  <p>For the IP, type:</p>
-  <p><strong>join.iwishyouamerrynewyear.com</strong></p>
-  <p>Click Done</p>
-  <p><strong>When you join do /register then your password</strong></p>
-  <p><strong>Do not forget this you will need it everytime you login</strong></p>
-  <p><strong>/login when you join back</strong></p>
 
-  <a href="open-this.html" target="_blank" rel="noopener noreferrer">
-    <button>Open Game</button>
-  </a>
+<div class="menu" id="menu">
+  <h2>Select Type</h2>
+  <div id="type-selection">
+    <button onclick="chooseType('WASM')">WASM</button>
+    <button onclick="chooseType('JAVA')">JAVA</button>
+    <div class="note">JAVA 1.8.8 Recommended</div>
+    <div class="note">Make GUI Scale Whatever</div>
+    <div class="multiplayer">Multiplayer: <a href="wss://join.iwishyouamerrynewyear.com">ws://join.iwishyouamerrynewyear.com</a></div>
+    <img src="settings.png" alt="Settings" class="settings-img">
+  </div>
+
+  <div id="version-selection" class="hidden">
+    <h2>Select Version</h2>
+    <div>
+      <button onclick="chooseVersion('1.8.8')">1.8.8</button>
+    </div>
+    <div>
+      <button onclick="chooseVersion('1.12.2')">1.12.2</button>
+    </div>
+    <div>
+      <button onclick="goBack()">Back</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  let selectedType = '';
+
+  function chooseType(type) {
+    selectedType = type;
+    document.getElementById('type-selection').classList.add('hidden');
+    document.getElementById('version-selection').classList.remove('hidden');
+    document.getElementById('version-selection').classList.add('fade-in');
+  }
+
+  function chooseVersion(version) {
+    const path = `${selectedType}/${version}.html`;
+    window.location.href = path;
+  }
+
+  function goBack() {
+    document.getElementById('version-selection').classList.add('hidden');
+    document.getElementById('type-selection').classList.remove('hidden');
+  }
+</script>
+
 </body>
 </html>
