@@ -798,5 +798,10 @@
     "link": "projects/minecraft/index.html",
     "imgSrc": "projects/minecraft/favicon.png",
     "title": "Minecraft"
+  },
+  {
+    "link": "projects/geometry/index.html",
+    "imgSrc": "projects/geometry/favicon.png",
+    "title": "Geometry Dash"
   }
 ]
