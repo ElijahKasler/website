@@ -260,11 +260,6 @@
     "title": "Game Inside a Game Inside a Game..."
   },
   {
-    "link": "projects/geodash/index.html",
-    "imgSrc": "projects/geodash/geoscratchicon.png",
-    "title": "Geometry Dash (Scratch)"
-  },
-  {
     "link": "projects/getaway-shootout/index.html",
     "imgSrc": "projects/getaway-shootout/img/images.jpg",
     "title": "Getaway Shootout"
@@ -792,7 +787,7 @@
   {
     "link": "projects/8-Ball/index.html",
     "imgSrc": "projects/8-Ball/favicon.png",
-    "title": "8 Ball Billiards Classic"
+    "title": "8 Ball Billiards"
   },
   {
     "link": "projects/minecraft/index.html",
@@ -803,5 +798,10 @@
     "link": "projects/geometry/index.html",
     "imgSrc": "projects/geometry/favicon.png",
     "title": "Geometry Dash"
+  },
+  {
+    "link": "projects/skribbl/index.html",
+    "imgSrc": "projects/skribbl/favicons.png",
+    "title": "Skribbl.io"
   }
 ]
