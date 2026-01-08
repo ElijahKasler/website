@@ -803,5 +803,10 @@
     "link": "projects/skribbl/index.html",
     "imgSrc": "projects/skribbl/favicons.png",
     "title": "Skribbl.io"
+  },
+  {
+    "link": "projects/drive-mad/index.html",
+    "imgSrc": "projects/drive-mad/favicon.ico",
+    "title": "Drive Mad"
   }
 ]
