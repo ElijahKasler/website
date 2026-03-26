@@ -808,5 +808,10 @@
     "link": "projects/drive-mad/index.html",
     "imgSrc": "projects/drive-mad/favicon.ico",
     "title": "Drive Mad"
+  },
+  {
+    "link": "projects/duck-life-4/index.html",
+    "imgSrc": "projects/duck-life-4/favicon.ico",
+    "title": "Duck Life 4"
   }
 ]
